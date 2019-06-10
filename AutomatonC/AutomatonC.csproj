@@ -41,6 +41,7 @@
       <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -52,15 +53,29 @@
     <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NUnitTest.cs" />
-    <Compile Include="TestCase01.cs" />
+    <Compile Include="Automation\BotStyleTest\BotStyle.cs" />
+    <Compile Include="Automation\Configurations\Selenium\PageObjectBase.cs" />
+    <Compile Include="Automation\Configurations\Selenium\SeleniumBase.cs" />
+    <Compile Include="Automation\Configurations\Selenium\TestCaseBase.cs" />
+    <Compile Include="Automation\Locators\DashBoardLocators.cs" />
+    <Compile Include="Automation\Locators\LoginLocators.cs" />
+    <Compile Include="Automation\PageObjects\DashBoardPage.cs" />
+    <Compile Include="Automation\PageObjects\LoginPage.cs" />
+    <Compile Include="Automation\TestCases\LoginSuite.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Automation\Commons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
