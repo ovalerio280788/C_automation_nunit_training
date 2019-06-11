@@ -66,12 +66,17 @@
     <Compile Include="Automation\Locators\LoginLocators.cs" />
     <Compile Include="Automation\PageObjects\DashBoardPage.cs" />
     <Compile Include="Automation\PageObjects\LoginPage.cs" />
+    <Compile Include="Automation\TestCases\LoginSuiteMaxTime.cs" />
     <Compile Include="Automation\TestCases\LoginSuite.cs" />
+    <Compile Include="Automation\TestCases\TestCaseExample.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Automation\Data\TestsData.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

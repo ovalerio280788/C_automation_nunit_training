@@ -11,28 +11,9 @@ using System.Configuration;
 namespace AutomatonC.Automation.TestCases
 {
     [TestFixture]
-    class LoginSuite : TestCaseBase
+    class LoginSuiteMaxTime : TestCaseBase
     {
-        [OneTimeSetUp]
-        public void Init()
-        {
-            Console.Out.WriteLine("This code is executed one time in this class at the begining");
-        }
-
-
-        [OneTimeTearDown]
-        public void Cleanup()
-        {
-            Console.Out.WriteLine("This code is executed one time in this class at the begining");
-        }
-
-        [SetUp]
-        public void SetUp()
-        {
-            Console.Out.WriteLine("I am in the SetUP in the test!!");
-        }
-
-        [Test, Description("To test that user is able to login with valid credentials #1"), ]
+        [Test, Description("To test that user is able to login with valid credentials #1"), MaxTime(2000)]
         public void TestLoginValid()
         {
             LoginPage loginPage = new LoginPage(this.Driver);
@@ -43,7 +24,7 @@ namespace AutomatonC.Automation.TestCases
             Assert.IsTrue(dashBoardPage.IsChangePasswordDisplayed(), "Change password link not displayed");
         }
 
-        [Test, Description("To test that user is able to login with valid credentials #2"),]
+        [Test, Description("To test that user is able to login with valid credentials #1"), Ignore("Deprecated")]
         public void TestLoginValid2()
         {
             LoginPage loginPage = new LoginPage(this.Driver);

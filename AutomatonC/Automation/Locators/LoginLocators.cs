@@ -21,6 +21,6 @@ namespace AutomatonC.Automation.Locators
         [FindsBy(How = How.Id, Using = "id_password")]
         protected IWebElement PasswordElement { get; set; }
 
-        protected By SubmitElement = By.XPath("[type='submit']");
+        protected By SubmitElement = By.CssSelector("[type='submit']");
     }
 }

@@ -11,13 +11,13 @@ namespace AutomatonC.Automation.Configurations.Selenium
     class TestCaseBase : SeleniumBase
     {
         [SetUp]
-        public void SetUp()
+        public void SetUpTestCaseBase()
         {
             SetUpBase(ConfigurationManager.AppSettings["BROWSER"], ConfigurationManager.AppSettings["URL"]);
         }
 
         [TearDown]
-        public void TearDown()
+        public void TearDownTestCaseBase()
         {
             TearDownBase();
         }

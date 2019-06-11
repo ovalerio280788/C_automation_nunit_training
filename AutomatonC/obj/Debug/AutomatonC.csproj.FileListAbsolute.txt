@@ -34,3 +34,4 @@ C:\Users\Oscar\Documents\GBSYS-Training\automation_c#\automation_c_nunit_trainin
 C:\Users\Oscar\Documents\GBSYS-Training\automation_c#\automation_c_nunit_training\AutomatonC\bin\Debug\WebDriver.xml
 C:\Users\Oscar\Documents\GBSYS-Training\automation_c#\automation_c_nunit_training\AutomatonC\bin\Debug\WebDriver.Support.xml
 C:\Users\Oscar\Documents\GBSYS-Training\automation_c#\automation_c_nunit_training\AutomatonC\obj\Debug\AutomatonC.csproj.CopyComplete
+C:\Users\Oscar\Documents\GBSYS-Training\automation_c#\automation_c_nunit_training\AutomatonC\bin\Debug\Automation\Data\TestsData.config

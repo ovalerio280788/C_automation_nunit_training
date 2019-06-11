@@ -26,7 +26,7 @@ namespace AutomatonC.Automation.PageObjects
             this.Bot.SendKeys(this.PasswordElement, Password);
         }
 
-        public DashBoardLocators Submit()
+        public DashBoardPage Submit()
         {
             this.Driver.FindElement(this.SubmitElement).Submit();
             return new DashBoardPage(this.Driver);

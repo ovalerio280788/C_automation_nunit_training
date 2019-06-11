@@ -13,7 +13,18 @@ namespace AutomatonC.Automation.Configurations
 {
     class SeleniumBase
     {
-        private IWebDriver Driver { get; set; }
+
+        private IWebDriver driver;
+        public IWebDriver Driver {
+            get
+            {
+                return driver;
+            }
+            set
+            {
+                driver = value;
+            }
+        }
 
         public IWebDriver SetUpBase(String BrowserName, String Url)
         {
